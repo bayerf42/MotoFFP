@@ -1,0 +1,7 @@
+*.src
+*.lst
+*.bin
+*.hex
+
+test_ffp.asm
+orig/*
