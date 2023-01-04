@@ -1,5 +1,10 @@
 # Port and cleanup of the Motorola 68343 floating point library for the Sirichote 68008 kit
 
+## Origin
+* Found at http://eab.abime.net/showthread.php?p=797994 
+* Original file http://eab.abime.net/attachment.php?attachmentid=30480&d=1328104342
+* unpacked `LZX` file with obscure online tool
+
 ## Changes
 
 * Removed unneeded IEEE files `IEFABS.SA`, `IEFADD.SA`, `IEFAFP.SA`
@@ -19,12 +24,7 @@
 * Renamed some duplicated labels
 * Removed 68010 compatibility code to save `SR` on the stack 
 * Created project file for defined order
-* Allowed lower case `e` as exponent marker
-
-
-## To check:
-*  `LSR.L D7,D7` in log and atan code is very suspect, would always put 0 into D7
-
+* Allowed lower case `e` as exponent marker in`FFPAFP`
 
 ## Entry vectors
 

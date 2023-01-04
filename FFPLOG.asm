@@ -87,7 +87,7 @@ FPLOK    MOVEM.L   D1-D6/A0,-(SP)      SAVE ALL WORK REGISTERS
          CMP.B     #31,D7              ? INSURE NOT TOO SMALL
          BLS.S     FPLSHF              NO, GO SHIFT
          MOVEQ     #0,D7               FORCE TO ZERO
-FPLSHF   LSR.L     D7,D7               SHIFT TO BIN(31,29) PRECISION *** FBI: is this correct?
+FPLSHF   LSR.L     D7,D7               SHIFT TO BIN(31,29) PRECISION
 
 *****************************************
 * CORDIC CALCULATION REGISTERS:         *

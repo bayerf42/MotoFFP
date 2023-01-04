@@ -73,7 +73,7 @@ FPAINRG  SUB.B     #64+3,D7            ADJUST EXPONENT
          BLS.S     FPANOTZ             BRANCH IF NOT TOO SMALL
          MOVEQ     #0,D6               CONVERT TO A ZERO
          BRA.S     FPAZROz             BRANCH IF ZERO
-FPANOTZ  LSR.L     D7,D7               SHIFT TO BIN(31,29) PRECISION **** FBI: is this correct?
+FPANOTZ  LSR.L     D7,D7               SHIFT TO BIN(31,29) PRECISION
 
 *****************************************
 * CORDIC CALCULATION REGISTERS:         *
