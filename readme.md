@@ -26,6 +26,29 @@
 * Created project file for defined order
 * Allowed lower case `e` as exponent marker in`FFPAFP`
 
+## Building the library
+
+* Build the Monitor ROM as [described here](https://github.com/bayerf42/Monitor)
+* Load project `MotoFFP.prj` into *Ide68K* and build it.
+* Execute
+```sh
+python makerom.py
+```
+to create `mon_ffp.bin` ROM image in the parallel `rom` directory.
+* Burn this file into ROM or continue building the [Lox68k project](https://github.com/bayerf42/Lox68k).
+
+
+## Using the library
+
+The main incentive for resurrection of the Motorola FFP library was to provide floating point
+numbers for the Lox68k language, but of course you can utilize it for other projects
+as well.
+
+The file `test_ffp.asm` shows how to call some routines from the library. Compile it in *Ide68K*
+(without a project file), load it to the Kit and run it. It prints the result of the computation
+to the terminal.
+
+
 ## Entry vectors
 
 * Startup file `ffp_entry.asm` defines the branch entries into the library
