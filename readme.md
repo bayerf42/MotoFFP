@@ -67,3 +67,4 @@ to the terminal.
 * Removed 68010 compatibility code to save `SR` on the stack 
 * Created project file for defined order
 * Allowed lower case `e` as exponent marker in`FFPAFP`
+* Fixed overflow bugs in sinh and cosh
