@@ -10,7 +10,10 @@
 *                                               *
 *  OUTPUT:  D7 - HYPERBOLIC RESULT              *
 *                                               *
-*     ALL OTHER REGISTERS ARE TRANSPARENT       *
+*  !!!WRONG !!!!!!!!!!!!!!!!!!!!!!!!!!!         *
+*  -->ALL OTHER REGISTERS ARE TRANSPARENT       *
+*  REGISTER D3-D5 will be destroyed !!!!        *
+*  HAVE TO SAVE D3-D5 AROUND CALLS              *
 *                                               *
 *  CODE SIZE:  36 BYTES   STACK WORK: 50 BYTES  *
 *                                               *

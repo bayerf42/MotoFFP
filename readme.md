@@ -68,3 +68,5 @@ to the terminal.
 * Created project file for defined order
 * Allowed lower case `e` as exponent marker in`FFPAFP`
 * Fixed overflow bugs in sinh and cosh
+* Wrong docs on sinh, cosh, and tanh: `D3-D5` are destroyed and must be saved
+
